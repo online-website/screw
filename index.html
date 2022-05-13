@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        height: 100vh;
+        width: 100%;
+        background-color: lightgreen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      h1 {
+        font-size: 100px;
+        font-family: system-ui;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 100px;
+      }
+
+      @media (max-width: 767px) {
+        h1 {
+          font-size: 60px;
+        }
+      }
+      p {
+        padding: 15px 30px;
+        color: white;
+        border-radius: 10px;
+        background-color: #009688;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="heading">Hello world</h1>
+      <p class="name">Tell me your name</p>
+    </div>
+    <script>
+      document.querySelector(".name").addEventListener("click", function () {
+        firstName = prompt("tell me your name");
+        alert(`Fuck you ${firstName}`);
+      });
+    </script>
+  </body>
+</html>
