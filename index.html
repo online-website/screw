@@ -53,7 +53,11 @@
     <script>
       document.querySelector(".name").addEventListener("click", function () {
         firstName = prompt("tell me your name");
-        alert(`Fuck you ${firstName}`);
+        if (typeof firstName === 'string')  {
+          alert(`Fuck you ${firstName}`); 
+        } else {
+          alert(`Fuck you enter a name`);
+        }
       });
     </script>
   </body>
